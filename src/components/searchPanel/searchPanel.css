@@ -1,0 +1,56 @@
+
+/* searching css */
+.search_container{
+    height: auto;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    border: 1px solid rgb(21, 11, 173);
+    border-radius: 10px;
+    background-color: rgba(69, 68, 104, 0.753);
+    position: fixed;
+    overflow:auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.closeButton{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(5, 4, 70, 0.863);
+    border-radius: 50%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputMovie{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: auto;
+    box-shadow: 0 0 10px 1px rgba(251, 251, 252, 0.973);
+    width: auto;
+    margin: 0 auto;
+}
+.searchedMovies{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+a{
+    margin: 0 auto;
+}
+.searchedMovies h6{
+    background-color: rgba(0, 0, 255, 0.582);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 10px;
+}

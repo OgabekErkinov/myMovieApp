@@ -1,0 +1,16 @@
+.sectionTitle{
+    height: 3rem;
+    width: 100%;
+    text-align: start;
+    font-size: 2rem;
+    font-weight: 700;
+    color: blue;
+}
+
+@media screen and (width < 431px) {
+    .sectionTitle{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

@@ -1,0 +1,33 @@
+footer{
+    height: 20rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 0.5px solid blue;
+    margin-top: 2rem;
+    max-width: auto;
+}
+.footer_container{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+.footer_icons{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3rem;
+    color: blue;
+}
+.footer_bottom{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(77, 75, 75, 0.582);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

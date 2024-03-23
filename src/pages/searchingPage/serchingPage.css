@@ -1,0 +1,53 @@
+.searchingPage_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+.inputArea{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.searchingResults{
+    width: auto;
+    height: auto;
+    gap: 1rem;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 auto;
+}
+.chosenMovie{
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 0.5px solid blue;
+    
+}
+a{
+    margin: 0 auto;
+
+}
+.chosenMovie img{
+    height: 100%;
+    width: 100%;
+}
+.chosenMovie h4{
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.336);
+    z-index: 1;
+    bottom: 5px;
+    font-size: medium;
+    width: 100%;
+}
+

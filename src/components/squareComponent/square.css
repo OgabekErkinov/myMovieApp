@@ -1,0 +1,29 @@
+.square{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 255, 0.473);
+    background-color: rgba(10, 9, 9, 0.329);
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 10px 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.square img{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (width < 431px) {
+    .square{
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        
+    }
+    
+}

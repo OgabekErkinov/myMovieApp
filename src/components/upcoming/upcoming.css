@@ -1,0 +1,35 @@
+.upcoming_container{
+    height: 300px;
+    width: 100%;
+}
+.upcomingSwiper{
+    height: 100%;
+    width: 100%;
+}
+.upcoming_item{
+    position: relative;
+    user-select: none;
+    
+}
+.upcoming_item img{
+    height: 100%;
+    width: 100%;
+    border: 0.5px solid blue;
+    border-radius: 1rem;
+}
+.upMovieName{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    bottom: 0;
+    font-weight: 700;
+    background-color: rgba(12, 12, 85, 0.24);
+    width: 100%;
+    padding: 1px;
+}
+
+@media screen and (width < 426px) {
+    
+    
+}
