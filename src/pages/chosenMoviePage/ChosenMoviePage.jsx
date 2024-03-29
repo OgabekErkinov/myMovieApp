@@ -51,7 +51,7 @@ const ChosenMoviePage = () => {
 
                  <div className="infoChosenMovie">
                   {infoAboutMovie?.map((item, idx)=>{
-                    return  <DoubleColumn contentOne = {item?.type} contentTwo={item?.value} key={idx}/>
+                    return  <DoubleColumn contentOne = {item?.type} contentTwo={item?.value ? item?.value : ''} key={idx}/>
                   })}
 
                       <div className="companies">

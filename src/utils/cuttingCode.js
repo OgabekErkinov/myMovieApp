@@ -1,3 +1,3 @@
-export const Element = {
+export const cut = {
     Title : (item) => `${item?.title?.replaceAll(" ",'-').toLowerCase()}`
 }

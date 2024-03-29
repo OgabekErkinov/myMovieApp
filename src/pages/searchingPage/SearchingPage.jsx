@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { Movie } from '../../services/service.Api'
 import './serchingPage.css'
 import {imageUrl} from '../../utils/imageUrl'
+import {cut} from '../../utils/cuttingCode'
 import { Link } from 'react-router-dom'
-import { Pagination } from '@mui/material'
 import MyPagination from '../../components/pagination/MyPagination'
 const SearchingPage = () => {
   const genres = [
@@ -108,6 +108,7 @@ const handleGenre = (genreId) =>{
 useEffect(()=>{
   searchByGenre()
 },[chosenGenre])
+cut
 
 
 const handleChangeByGenre = (event,p) => {
@@ -127,7 +128,7 @@ const handleChangeByGenre = (event,p) => {
 
          <div className="searchingResults">
                {searchedMovies?.slice(firstIndex,lastIndex).map((item, idx)=>{
-                               return  <Link to = {`/chosenMoviePage/${item?.title?.replaceAll(" ",'-').toLowerCase()}-${item?.id}`} key={idx}>
+                               return  <Link to = {`/chosenMoviePage/${cut.Title(item)}-${item?.id}`} key={idx}>
                                      <div className="chosenMovie" >
                                           <img src={`${imageUrl.img500}${item?.backdrop_path}`} alt="image" />
                                           <h4>{item?.original_title}</h4>

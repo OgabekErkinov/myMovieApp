@@ -7,7 +7,7 @@ const MyPagination = ({countPages,handleChangePagination}) => {
     <Stack spacing={2} className='m-t-b'>
     <Pagination count={countPages} 
                 variant="outlined"
-                shape="rounded" 
+                shape="circular"
                 
                 onChange={(e,p)=>handleChangePagination(e,p)}/>
 </Stack>
