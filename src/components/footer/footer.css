@@ -31,3 +31,11 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+.footer_icons div:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.footer_icons div{
+    transition: 0.4s;
+}

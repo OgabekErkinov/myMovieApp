@@ -64,8 +64,9 @@ const SearchPanel = ({isVisible, setIsVisible}) => {
 
             </Link>
           })}
-          <MyPagination countPages={searchPageCount} handleChangePagination={handleSearchChange} className = 'm-t-b'/>
+          
         </div>
+        <MyPagination countPages={searchPageCount} handleChangePagination={handleSearchChange} className = 'm-t-b'/>
         
         
       </div>

@@ -1,7 +1,6 @@
 .secondLoader_container{
-    height: 10rem;
+    height: 100%;
     width: 100%;
-    margin-bottom: 4rem;
     display: flex;
     justify-content: space-evenly;
 }

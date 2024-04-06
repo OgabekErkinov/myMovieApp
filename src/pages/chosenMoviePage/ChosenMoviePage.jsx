@@ -17,6 +17,7 @@ const ChosenMoviePage = () => {
   const {id} = useParams()
   const movieId = id.split('-')
   const similarId = Number(movieId[movieId.length-1])
+  console.log(similarId)
 
   const infoAboutMovie = [
     {type : 'Name : ', value : myMovie?.original_title},
@@ -41,7 +42,9 @@ const ChosenMoviePage = () => {
   return (
     <div className="chosenMovie_container">
                  <div className="movieImage">
-                      {!chooseLoading ? <img src={`${imageUrl.img500}${myMovie?.poster_path}`} alt="image" /> : <SecondLoader/>}
+                      {!chooseLoading ? 
+                        <img src={`${imageUrl.img500}${myMovie?.poster_path}`} alt="image" /> : 
+                        <SecondLoader/>}
                      <div className="genres">{genre?.map((item,idx)=>{
                                return <span key={idx}>{idx === 0 ? `${item?.name}` : ` / ${item?.name}`}</span>
                                                                      })}
@@ -51,14 +54,17 @@ const ChosenMoviePage = () => {
 
                  <div className="infoChosenMovie">
                   {infoAboutMovie?.map((item, idx)=>{
-                    return  <DoubleColumn contentOne = {item?.type} contentTwo={item?.value ? item?.value : ''} key={idx}/>
+                    return  <DoubleColumn contentOne = {item?.type}
+                                          contentTwo={item?.value ? 
+                                          item?.value : ''} key={idx}/>
                   })}
 
                       <div className="companies">
                            {companies?.map((item , idx) => {
                                        return <Square key={idx}>{item?.logo_path ? 
-                              <img src ={`${imageUrl.img500}${item?.logo_path}`}/> : 
-                                                     item?.name}</Square>
+                                                               <img src ={`${imageUrl.img200}${item?.logo_path}`}/> : 
+                                                                item?.name}
+                                              </Square>
                            }) }
                       </div>
                 </div>

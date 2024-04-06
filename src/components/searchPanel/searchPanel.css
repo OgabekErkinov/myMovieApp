@@ -43,6 +43,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
+    margin: 0 auto;
 }
 a{
     margin: 0 auto;
@@ -52,5 +53,6 @@ a{
     position: absolute;
     z-index: 2;
     width: 100%;
+    font-size: 50%;
     bottom: 10px;
 }

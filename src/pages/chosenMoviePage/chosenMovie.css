@@ -46,6 +46,8 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 @media screen and (width < 1005px) {
     .chosenMovie_container{
